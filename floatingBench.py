@@ -25,6 +25,5 @@ for i in range(1, 100001):
 end = time.time()
 total_time = end - start
 
-print(f"Benchmark 2:64-bit Floating point operation benchmark which 
-includes additions, multiplication, and division is: {total_time} seconds")
+print(f"Benchmark 2:64-bit Floating point operation benchmark which includes additions, multiplication, and division is: {total_time} seconds")
 
