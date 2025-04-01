@@ -20,3 +20,11 @@ for i in range(1, 100001):
 for i in range(1, 100001):
     for j in range(1, 20001):
         res = dummy_value / dummy_value
+
+# timing to the end
+end = time.time()
+total_time = end - start
+
+print(f"Benchmark 2:64-bit Floating point operation benchmark which 
+includes additions, multiplication, and division is: {total_time} seconds")
+
