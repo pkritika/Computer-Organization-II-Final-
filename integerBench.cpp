@@ -41,3 +41,11 @@ int main() {
     auto diff = chrono::duration_cast<std::chrono::duration<double> >(end - start);
     totalTime = diff.count();
 
+
+    cout << ANSI_COLOR_YELLOW << "Benchmark 1:" << endl << ANSI_COLOR_RESET;
+    cout << ANSI_COLOR_GREEN << "32-bit Integer operation benchmark" << endl << ANSI_COLOR_RESET;
+    cout << ANSI_COLOR_RED << "Which includes additions, multiplication, and division' is: " << totalTime << " seconds" << ANSI_COLOR_RESET << endl;
+    
+    return 0;
+}
+
