@@ -30,3 +30,19 @@ int main() {
         outputFileHandler << string(outputBuffer);
         bytesWrittenSoFar = bytesWrittenSoFar + oneTimeSize;
     }
+
+    outputFileHandler.close();
+
+    ifstream inputFileHandler("dummyOneBillionBytes.txt");
+    char inputBuffer[oneTimeSize];
+
+    while(!inputFileHandler.eof()){
+        inputFileHandler.read(inputBuffer, oneTimeSize);
+
+    }
+
+    inputFileHandler.close();
+
+    auto end = chrono::high_resolution_clock::now();
+    auto diff = chrono::duration_cast<std::chrono::duration<double> >(end - start);
+    totalTime = diff.count();
