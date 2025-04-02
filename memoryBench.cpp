@@ -12,6 +12,7 @@ using namespace std;
 
 
 int main() {
+    
     int32_t* myArr = new int32_t[5000000000];
     int32_t dummyReadValue = 0;
     double totalTime;
