@@ -7,4 +7,9 @@
 #define ANSI_COLOR_YELLOW  "\x1b[33m"
 #define ANSI_COLOR_RESET   "\x1b[0m"
 
+int main() {
+    double totalTime;
+    double dummyValue = 6.4;
+    double res = 2.2;
 
+}
