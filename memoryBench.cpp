@@ -29,5 +29,11 @@ int main() {
 auto end = chrono::high_resolution_clock::now();
 auto diff = chrono::duration_cast<std::chrono::duration<double> >(end - start);
 totalTime = diff.count();
+cout << ANSI_COLOR_YELLOW << "Benchmark 3:" << endl << ANSI_COLOR_RESET;
+cout << ANSI_COLOR_GREEN << "Memory benchmark" << endl << ANSI_COLOR_RESET;
+cout << ANSI_COLOR_RED << "Which includes reading from, and writing to array, 4 bytes each time' is: " << totalTime << " seconds" << ANSI_COLOR_RESET << endl;
 
+delete[] myArr;
+
+return 0;
 }
