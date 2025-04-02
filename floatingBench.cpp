@@ -12,4 +12,12 @@ int main() {
     double dummyValue = 6.4;
     double res = 2.2;
 
+    auto start = chrono::high_resolution_clock::now();
+
+    for(register int i = 1; i <= 100000; i++){
+        for (register int j = 1; j <= 100000; j++){
+            res = dummyValue + dummyValue;
+        }
+
+    }
 }
